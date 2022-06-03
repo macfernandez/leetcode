@@ -1,18 +1,3 @@
-# Given an array of integers nums and an integer target, return indices of the
-# two numbers such that they add up to target.
-# You may assume that each input would have exactly one solution, and you may
-# not use the same element twice.
-# You can return the answer in any order.
-# 
-# Constraints:
-# 2 <= nums.length <= 104
-# -109 <= nums[i] <= 109
-# -109 <= target <= 109
-# Only one valid answer exists.
-#
-# Follow-up: Can you come up with an algorithm that is less than O(n2) time
-# complexity?
-
 from typing import *
 
 class Solution:
@@ -80,3 +65,7 @@ class Solution:
 # 0 - 4   ||   1 - 4   ||   2 - 4   ||   3 - 4   || 4 - 4 x ||   5 - 4 x ||    6 - 4 x
 # 0 - 5   ||   1 - 5   ||   2 - 5   ||   3 - 5   || 4 - 5   ||   5 - 5 x ||    6 - 5 x
 # 0 - 6   ||   1 - 6   ||   2 - 6   ||   3 - 6   || 4 - 6   ||   5 - 6   ||    6 - 6 x
+
+# if      n == 2 --> 1
+# else if n == 3 --> 3
+# else if n > 3  --> 3 + \sum_i^{n-3} n - i
