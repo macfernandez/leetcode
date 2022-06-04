@@ -1,10 +1,10 @@
 from typing import *
 
 # Definition for singly-linked list.
-#class ListNode:
-#    def __init__(self, val=0, next=None):
-#        self.val = val
-#        self.next = next
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
 
 class Solution:
     def add_two_numbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
@@ -33,9 +33,9 @@ class Solution:
             solution.append(remain)
         return solution
 
-print(Solution().addTwoNumbers([2,4,3],[5,6,4]))
-print(Solution().addTwoNumbers([0],[0]))
-print(Solution().addTwoNumbers([9,9,9,9,9,9,9],[9,9,9,9]))
+#print(Solution().addTwoNumbers([2,4,3],[5,6,4]))
+#print(Solution().addTwoNumbers([0],[0]))
+#print(Solution().addTwoNumbers([9,9,9,9,9,9,9],[9,9,9,9]))
         
 
 # Input: l1 = [2,4,3], l2 = [5,6,4]
