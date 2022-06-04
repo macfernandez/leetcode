@@ -1,40 +1,42 @@
 from typing import *
 
 class Solution:
+    #def two_sum(self, nums: List[int], target: int) -> List[int]:
+    #    '''
+    #        Take a list of integers (nums) and an integer (target) and return
+    #        the positions in the list that add up the target.
+    #
+    #        Time complexity: O(n^2)
+    #
+    #        Parameters
+    #        ----------
+    #        nums: list
+    #            List of int.
+    #
+    #        target: int
+    #            Target for the addition.
+    #
+    #        Returns
+    #        -------
+    #        solution: list
+    #            List of int with number positions that add up to target.
+    #    '''
+    #    solution = list()
+    #    for i in range(len(nums)):
+    #        for j in range(len(nums)):
+    #            if i < j:
+    #                if (nums[i] + nums[j] == target):
+    #                    solution.append(i)
+    #                    solution.append(j)
+    #                    break
+    #    return solution
+
     def two_sum(self, nums: List[int], target: int) -> List[int]:
         '''
             Take a list of integers (nums) and an integer (target) and return
             the positions in the list that add up the target.
 
-            Time complexity: O(n^2)
-
-            Parameters
-            ----------
-            nums: list
-                List of int.
-
-            target: int
-                Target for the addition.
-
-            Returns
-            -------
-            solution: list
-                List of int with number positions that add up to target.
-        '''
-        solution = list()
-        for i in range(len(nums)):
-            for j in range(len(nums)):
-                if i < j:
-                    if (nums[i] + nums[j] == target):
-                        solution.append(i)
-                        solution.append(j)
-                        break
-        return solution
-
-    def two_sum_faster(self, nums: List[int], target: int) -> List[int]:
-        '''
-            Take a list of integers (nums) and an integer (target) and return
-            the positions in the list that add up the target.
+            Time complexity: (n * (n-1))/2 -> O(n^2)
 
             Parameters
             ----------
@@ -65,7 +67,3 @@ class Solution:
 # 0 - 4   ||   1 - 4   ||   2 - 4   ||   3 - 4   || 4 - 4 x ||   5 - 4 x ||    6 - 4 x
 # 0 - 5   ||   1 - 5   ||   2 - 5   ||   3 - 5   || 4 - 5   ||   5 - 5 x ||    6 - 5 x
 # 0 - 6   ||   1 - 6   ||   2 - 6   ||   3 - 6   || 4 - 6   ||   5 - 6   ||    6 - 6 x
-
-# if      n == 2 --> 1
-# else if n == 3 --> 3
-# else if n > 3  --> 3 + \sum_i^{n-3} n - i
