@@ -22,5 +22,4 @@ class Solution:
             prefix = strs[0][:i]
             if all([s.startswith(prefix) for s in strs]):
                 solution = strs[0][:i]
-            else:
-                return solution
+        return solution
