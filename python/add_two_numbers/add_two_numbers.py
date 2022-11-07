@@ -8,6 +8,23 @@ class ListNode:
 
 class Solution:
     def add_two_numbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+        '''
+            Given two non-empty linked lists representing two non-negative
+            integers, return the sum as a linked list.
+
+            Parameters
+            ----------
+            l1: ListNode
+                List with integers.
+                
+            l2: ListNode
+                List with integers.
+
+            Returns
+            -------
+            solution: list
+                List with the sum.
+        '''
         solution = list()
         remain = 0
         shorter_list = l1 if len(l1) < len(l2) else l2
