@@ -14,7 +14,7 @@ class Solution:
 
             Returns
             -------
-            missing: int
+            int
                 Number that is missing.
         '''
         missing = [True] * (len(nums)+1)
