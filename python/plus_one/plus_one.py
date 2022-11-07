@@ -3,6 +3,20 @@ from typing import List
 
 class Solution:
     def plus_one(self, digits: List[int]) -> List[int]:
+        '''
+            Given a list with integers, increment the large integer by one and
+            return the resulting array of digits.
+
+            Parameters
+            ----------
+            digits: list
+                List with integers.
+
+            Returns
+            -------
+            plus_one_digits: list
+                Array with digist incremented by one.
+        '''
         plus_one_digits = list()
         to_add = 1
         for d in digits[::-1]:
