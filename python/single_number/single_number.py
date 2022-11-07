@@ -4,22 +4,18 @@ from typing import List
 class Solution:
     def single_number(self, nums: List[int]) -> int:
         '''
-            Take a list of integers and return the only number that appears once.
-
-            Time complexity: O(n)
+            Take a list of integers and return the only number that appears
+            once.
 
             Parameters
             ----------
             nums: list
                 List of int.
 
-            target: int
-                Target for the addition.
-
             Returns
             -------
-            solution: list
-                List of int with number positions that add up to target.
+            single: int
+                Integer that only appears once in the list.
         '''
         nums_set = set(nums)
         for n in nums_set:
