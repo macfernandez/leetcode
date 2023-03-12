@@ -3,6 +3,7 @@ import pytest
 from python.longest_common_prefix.longest_common_prefix import Solution
 
 @pytest.mark.parametrize('strs, expected_prefix',[
+    ([""], ''),
     (["flower","flow","flight"], 'fl'),
     (["dog","racecar","car"], '')
 ])

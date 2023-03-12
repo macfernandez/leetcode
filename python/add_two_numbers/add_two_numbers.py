@@ -8,6 +8,23 @@ class ListNode:
 
 class Solution:
     def add_two_numbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+        '''
+            Given two non-empty linked lists representing two non-negative
+            integers, return the sum as a linked list.
+
+            Parameters
+            ----------
+            l1: ListNode
+                List with integers.
+                
+            l2: ListNode
+                List with integers.
+
+            Returns
+            -------
+            solution: list
+                List with the sum.
+        '''
         solution = list()
         remain = 0
         shorter_list = l1 if len(l1) < len(l2) else l2
@@ -32,27 +49,3 @@ class Solution:
         if remain:
             solution.append(remain)
         return solution
-
-#print(Solution().addTwoNumbers([2,4,3],[5,6,4]))
-#print(Solution().addTwoNumbers([0],[0]))
-#print(Solution().addTwoNumbers([9,9,9,9,9,9,9],[9,9,9,9]))
-        
-
-# Input: l1 = [2,4,3], l2 = [5,6,4]
-# Output: [7,0,8]
-# Explanation: 342 + 465 = 807.
-
-# Input: l1 = [0], l2 = [0]
-# Output: [0]
-
-# Input: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]
-# Output: [8,9,9,9,0,0,0,1]
-
-9 | 9 | 0 | 18 | 8
-9 | 9 | 1 | 19 | 9
-9 | 9 | 1 | 19 | 9
-9 | 9 | 1 | 19 | 9
-9 | 0 | 1 | 10 | 0
-9 | 0 | 1 | 10 | 0
-9 | 0 | 1 | 10 | 0
-0 | 0 | 1 | 1  | 1

@@ -6,7 +6,7 @@ My Python solutions for LeetCode problems.
   <tr>
     <th>#</th>
     <th>Title</th>
-    <th>Solution</th>
+    <th>Code</th>
     <th>Difficulty</th>
   </tr>
   <tr>

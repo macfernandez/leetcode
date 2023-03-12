@@ -7,6 +7,7 @@ class Solution:
             the positions in the list that add up the target.
 
             Time complexity: O(n)
+            
             Parameters
             ----------
             nums: list
