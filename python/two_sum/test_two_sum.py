@@ -1,4 +1,3 @@
-from numpy import source
 import pytest
 
 from python.two_sum.two_sum import Solution
@@ -19,6 +18,11 @@ from python.two_sum.two_sum import Solution
         [2,7,11,15],
         9,
         [0,1]
+    ),
+    (
+        [10,9,3,5,8,0,25],
+        25,
+        [5,6],
     ),
     (                               # len(nums)==25
         [
