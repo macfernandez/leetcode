@@ -9,4 +9,4 @@ from python.plus_one.plus_one import Solution
     ([1,9,3], [1,9,4])
 ])
 def test_given_sentence_when_solution_length_of_last_word_runs_then_returns_expected_length(sentence, expected_length):
-    assert Solution().plus_one(sentence) == expected_length
+    assert Solution().plusOne(sentence) == expected_length

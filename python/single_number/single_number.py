@@ -2,7 +2,7 @@ from typing import List
 
 
 class Solution:
-    def single_number(self, nums: List[int]) -> int:
+    def singleNumber(self, nums: List[int]) -> int:
         '''
             Take a list of integers and return the only number that appears
             once.

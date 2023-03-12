@@ -1,5 +1,5 @@
 class Solution:
-    def roman_to_int(self, s: str) -> int:
+    def romanToInt(self, s: str) -> int:
         '''
             Take a roman number and return it as integer.
 

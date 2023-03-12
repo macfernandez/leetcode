@@ -8,4 +8,4 @@ from python.length_of_last_word.length_of_last_word import Solution
     ('luffy is still joyboy', 6)
 ])
 def test_given_sentence_when_solution_length_of_last_word_runs_then_returns_expected_length(sentence, expected_length):
-    assert Solution().length_of_last_word(sentence) == expected_length
+    assert Solution().lengthOfLastWord(sentence) == expected_length

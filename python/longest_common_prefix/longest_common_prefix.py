@@ -1,7 +1,7 @@
 from typing import *
 
 class Solution:
-    def longest_common_prefix(self, strs: List[str]) -> str:
+    def longestCommonPrefix(self, strs: List[str]) -> str:
         '''
             Given a list with strings, return the common prefix for those
             elements.

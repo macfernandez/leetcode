@@ -2,7 +2,7 @@ from typing import List
 
 
 class Solution:
-    def plus_one(self, digits: List[int]) -> List[int]:
+    def plusOne(self, digits: List[int]) -> List[int]:
         '''
             Given a list with integers, increment the large integer by one and
             return the resulting array of digits.

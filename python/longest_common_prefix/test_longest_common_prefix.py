@@ -8,4 +8,4 @@ from python.longest_common_prefix.longest_common_prefix import Solution
     (["dog","racecar","car"], '')
 ])
 def test_given_list_when_add_longest_common_prefix_runs_then_returns_expected_common_prefix(strs, expected_prefix):
-    assert Solution().longest_common_prefix(strs) == expected_prefix
+    assert Solution().longestCommonPrefix(strs) == expected_prefix

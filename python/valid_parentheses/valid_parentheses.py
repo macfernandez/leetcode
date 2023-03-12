@@ -1,5 +1,5 @@
 class Solution:
-    def is_valid(self, s: str) -> bool:
+    def isValid(self, s: str) -> bool:
         '''
             Take a string with parentheses ('()[]{}') and return True if all
             brackets are open and closed in the correct order by the same type.

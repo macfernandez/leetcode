@@ -101,4 +101,4 @@ from python.two_sum.two_sum import Solution
     )
 ])
 def test_given_nums_and_target_when_solution_two_sum_runs_returns_pos_summed_nums(nums,target,expected_output):
-    assert Solution().two_sum(nums, target) == expected_output
+    assert Solution().twoSum(nums, target) == expected_output

@@ -1,5 +1,5 @@
 class Solution:
-    def length_of_last_word(self, s: str) -> int:
+    def lengthOfLastWord(self, s: str) -> int:
         '''
             Given string s consisting of words and spaces, return the length of
             the last word in the string.

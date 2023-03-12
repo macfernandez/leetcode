@@ -16,6 +16,12 @@ My Python solutions for LeetCode problems.
     <td>Easy</td>
   </tr>
   <tr>
+    <td>2</td>
+    <td><a href="https://leetcode.com/problems/add-two-numbers/">Add Two Numbers</td>
+    <td><a href="./python/add_two_numbers/add_two_numbers.py">Python</a></td>
+    <td>Medium</td>
+  </tr>
+  <tr>
     <td>13</td>
     <td><a href="https://leetcode.com/problems/roman-to-integer/">Roman to Integer</td>
     <td><a href="./python/roman_to_integer/roman_to_integer.py">Python</a></td>
@@ -41,8 +47,26 @@ My Python solutions for LeetCode problems.
   </tr>
   <tr>
     <td>58</td>
-    <td><a href="https://leetcode.com/problems/two-sum/">Length of Last Word</td>
+    <td><a href="https://leetcode.com/problems/length-of-last-word/">Length of Last Word</td>
     <td><a href="./python/length_of_last_word/length_of_last_word.py">Python</a></td>
+    <td>Easy</td>
+  </tr>
+  <tr>
+    <td>60</td>
+    <td><a href="https://leetcode.com/problems/length-of-last-word/">Length of Last Word</td>
+    <td><a href="./python/length_of_last_word/length_of_last_word.py">Python</a></td>
+    <td>Easy</td>
+  </tr>
+  <tr>
+    <td>136</td>
+    <td><a href="https://leetcode.com/problems/single-number/">Single Number</td>
+    <td><a href="./python/single_number/single_number.py">Python</a></td>
+    <td>Easy</td>
+  </tr>
+  <tr>
+    <td>268</td>
+    <td><a href="https://leetcode.com/problems/plus-one/">Plus One</td>
+    <td><a href="./python/plus_one/plus_one.py">Python</a></td>
     <td>Easy</td>
   </tr>
 </table>

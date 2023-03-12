@@ -7,7 +7,7 @@ class ListNode:
         self.next = next
 
 class Solution:
-    def add_two_numbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
         '''
             Given two non-empty linked lists representing two non-negative
             integers, return the sum as a linked list.

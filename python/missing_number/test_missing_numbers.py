@@ -8,4 +8,4 @@ from python.missing_number.missing_number import Solution
     ([9,6,4,2,3,5,7,0,1], 8)
 ])
 def test_given_sentence_when_solution_length_of_last_word_runs_then_returns_expected_length(nums, expected_missing):
-    assert Solution().missing_number(nums) == expected_missing
+    assert Solution().missingNumber(nums) == expected_missing
