@@ -25,27 +25,18 @@ class Solution:
             solution: list
                 List with the sum.
         '''
-        solution = list()
-        remain = 0
-        shorter_list = l1 if len(l1) < len(l2) else l2
-        longer_list = l1 if len(l1) >= len(l2) else l2
-        for i in range(len(longer_list)):
-            if i < len(shorter_list):
-                l_sum = shorter_list[i] + longer_list[i] + remain
-                if l_sum >= 10:
-                    solution.append(int(str(l_sum)[-1]))
-                    remain = int(str(l_sum)[:-1])
-                else:
-                    solution.append(l_sum)
-                    remain = 0
+        l1_int, l2_int = self.getVals(l1), self.getVals(l2)
+        addition = l1_int + l2_int
+        for i, digit in enumerate(str(addition)):
+            if i == 0:
+                list_node = ListNode(val=int(digit))
             else:
-                l_sum = longer_list[i] + remain
-                if l_sum >= 10:
-                    solution.append(int(str(l_sum)[-1]))
-                    remain = int(str(l_sum)[:-1])
-                else:
-                    solution.append(l_sum)
-                    remain = 0
-        if remain:
-            solution.append(remain)
-        return solution
+                list_node = ListNode(val=int(digit), next=list_node)
+        return list_node
+        
+    def getVals(self, node: ListNode):
+        vals = ''
+        while node != None:
+            vals = f'{node.val}{vals}'
+            node = node.next
+        return int(vals)
