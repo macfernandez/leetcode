@@ -7,7 +7,8 @@ from python.longest_palindromic_substring.longest_palindromic_substring import S
     ('babad', ['aba', 'bab']),
     ('cbbd', ['bb']),
     ('abbaa', ['abba']),
-    ('nnabba', ['abba'])
+    ('nnabba', ['abba']),
+    ('a', ['a'])
 ])
 def test_solution(s, expected_substring):
     assert Solution().longestPalindrome(s) in expected_substring
