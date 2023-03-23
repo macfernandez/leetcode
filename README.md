@@ -22,6 +22,24 @@ My Python solutions for LeetCode problems.
     <td>Medium</td>
   </tr>
   <tr>
+    <td>3</td>
+    <td><a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/">Longest Substring Without Repeating Characters</td>
+    <td><a href="./python/longest_substring/longest_substring.py">Python</a></td>
+    <td>Medium</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td><a href="https://leetcode.com/problems/median-of-two-sorted-arrays/description/">Median of Two Sorted Arrays</td>
+    <td><a href="./python/median_of_two_sorted_arrays/median_of_two_sorted_arrays.py">Python</a></td>
+    <td>Hard</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td><a href="https://leetcode.com/problems/longest-palindromic-substring/">Longest Palindromic Substring</td>
+    <td><a href="./python/longest_palindromic_substring/longest_palindromic_substring.py">Python</a></td>
+    <td>Medium</td>
+  </tr>
+  <tr>
     <td>13</td>
     <td><a href="https://leetcode.com/problems/roman-to-integer/">Roman to Integer</td>
     <td><a href="./python/roman_to_integer/roman_to_integer.py">Python</a></td>
