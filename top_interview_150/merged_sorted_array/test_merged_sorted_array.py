@@ -1,6 +1,6 @@
 import pytest
 
-from top_interview_150.merged_sorted_array import Solution
+from top_interview_150.merged_sorted_array.merged_sorted_array import Solution
 
 
 @pytest.mark.parametrize('nums1, m, nums2, n, expected',[
