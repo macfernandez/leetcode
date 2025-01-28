@@ -5,13 +5,6 @@ from typing import List
 
 
 class Solution:
-    def _merge(self, nums_x: List[int], x: int, nums_y: List[int], y: int) -> None:
-        pointer_y = 0
-        while pointer_y < y:
-            ny = nums_y[pointer_y] # 2
-            print(ny)
-            pointer_y += 1
-
     def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
         """
         Do not return anything, modify nums1 in-place instead.
@@ -20,20 +13,24 @@ class Solution:
             _ = nums1.pop()
 
         if not nums1:
-            nums1.extend(nums2)
-        
+            nums1.extend(nums2[:n])
+            return
+
+        if not nums2[:n]:
+            return
+
         else:
-            p1 = 0
-            for p2 in range(len(nums2[:n])):
-                if nums2[p2] <= nums1[p1]:
-                    nums1.insert(p1, nums2[p2])
-                    p1 += 1
+            i, p1, p2 = 0, 0, 0
+            while i < m+n:
+                if len(nums1) == m+n:
+                    break
+                n1, n2 = nums1[p1], nums2[p2]
+                if n1 < n2:
+                    if len(nums1)-1 <= p1:
+                        nums1.append(n2)
+                        p2 += 1
                 else:
-                    try:
-                        while nums1[p1] < nums2[p2]:
-                            p1 += 1
-                        nums1.insert(p1, nums2[p2])
-                        p1 += 1
-                    except IndexError:
-                        p1 -= 1
-                        nums1.append(nums2[p2])
+                    nums1.insert(i, n2)
+                    p2 += 1
+                p1 += 1
+                i += 1
