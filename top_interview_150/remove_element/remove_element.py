@@ -6,12 +6,10 @@ from typing import List
 
 class Solution:
     def removeElement(self, nums: List[int], val: int) -> int:
-        first, last = 0, len(nums)-1
-        while (first <= last):
-            if nums[first] == val:
-                n = nums[first]
-                nums[first], nums[last] = nums[last], n
-                last -= 1
-            else:
-                first += 1
-        return first
+        k = 0
+
+        for i in range(len(nums)):
+            if nums[i] != val:
+                nums[k] = nums[i]
+                k += 1
+        return k
