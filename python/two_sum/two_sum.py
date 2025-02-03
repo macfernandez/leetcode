@@ -1,4 +1,7 @@
-from typing import *
+# problem 1
+# https://leetcode.com/problems/two-sum/submissions/715698307/
+
+from typing import List
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
@@ -22,9 +25,8 @@ class Solution:
                 List of int with number positions that add up to target.
         '''
         for i in range(len(nums)):
-            needed = target - nums[i]
-            masked_nums = nums[:i] + [None] + nums[i+1:]
-            if needed in masked_nums:
-                j = masked_nums.index(needed)
-                solution = [i,j]
-                return solution
+            n = target-nums[i]
+            if n in nums:
+                ii = nums.index(n)
+                if ii != i:
+                    return [i, ii] if i < ii else [ii, i]
