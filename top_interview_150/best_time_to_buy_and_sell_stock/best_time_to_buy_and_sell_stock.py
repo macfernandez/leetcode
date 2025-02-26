@@ -6,12 +6,12 @@ from typing import List
 
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-        buy, sell, profit = prices[0], 0, 0
+        buy, profit = prices[0], 0
         for price in prices[1:]:
             if price < buy:
                 buy = price
+                profit = 0
             elif buy < price:
                 if profit < price - buy:
                     profit = price - buy
-                    sell = price
         return profit
