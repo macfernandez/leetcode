@@ -1,4 +1,4 @@
-# problem #2
+# problem 2
 # https://leetcode.com/problems/add-two-numbers/description/
 
 
