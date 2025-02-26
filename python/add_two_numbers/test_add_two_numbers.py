@@ -20,7 +20,15 @@ def list_node_for_testing():
     ([0], [0], [0]),
     ([9,9,9,9,9,9,9], [9,9,9,9], [8,9,9,9,0,0,0,1])
 ])
-def test_given_two_list_node_when_add_two_numbers_runs_then_returns_expected_list_node(
+def test_solution(
     list_node_for_testing, l1, l2, expected_list_node
     ):
-    assert True
+    l1, l2 = list_node_for_testing(l1), list_node_for_testing(l2)
+    expected = list_node_for_testing(expected_list_node)
+    predicted = Solution().addTwoNumbers(l1, l2)
+    while True:
+        assert expected.val == predicted.val
+        if expected.next is None and predicted.next is None:
+            break
+        expected, predicted = expected.next, predicted.next
+        

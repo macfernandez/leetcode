@@ -1,4 +1,8 @@
-from typing import *
+# problem #2
+# https://leetcode.com/problems/add-two-numbers/description/
+
+
+from typing import Optional
 
 # Definition for singly-linked list.
 class ListNode:
